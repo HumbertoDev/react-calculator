@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// import libraries
+import React from 'react'
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// component creation with an arrow function
+const App = () => {
+  return ( 
+    <div>
+      <h1>¡Calcula tu IMG en Segundos!</h1>
+      <p>Te damos la biendenida.</p>
+    </div> 
+    )
 }
 
-export default App;
+// export the function
+export default App
