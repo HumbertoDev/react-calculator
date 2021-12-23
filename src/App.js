@@ -1,14 +1,20 @@
 // import libraries
 import React from 'react'
+import Result from '../src/components/Result'
+import Button from '../src/components/Button'
 import "./App.css"
 
 // component creation with an arrow function
 const App = () => {
   return ( 
-    <div>
-      <h1>¡Calcula tu IMG en Segundos!</h1>
-      <p>Te damos la biendenida.</p>
-    </div> 
+    <main>
+      <section className='glass-efect'>
+          <Result value={'555'}/>
+          <Button type='Hola' text='Como estas' clickHandler={()=>{
+            console.log('segundo piso')
+          }}/>
+      </section>
+    </main> 
     )
 }
 
