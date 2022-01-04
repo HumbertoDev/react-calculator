@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '../src/App'
+//importing libraries
+import React, { StrictMode } from 'react'
+import ReactDOM from 'react-dom'
+import App from '../src/App' 
 
+//render the content
 
+const root = document.getElementById('root')
 
-// import reportWebVitals from './reportWebVitals';
-
-var Root = document.querySelector('#root')
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <App />
-  </React.StrictMode>,
-  Root)
+  </StrictMode>,
+  root
+)
 
 // ReactDOM.render(
 //   <React.StrictMode>

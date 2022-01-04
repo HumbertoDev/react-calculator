@@ -2,16 +2,16 @@ import React from "react"
 import PropTypes from "prop-types" 
 
 const Result = ({ value }) => {
-    console.log("Renderizacion de resul", value)
+    console.log("Renderizacion de result " + value)
     return (
-        <div className="result">
+        <div className="result-container">
             {value}
         </div>
     )
 }
 
 Result.propTypes =  {
-    value : PropTypes.string.isRequired
+    value : PropTypes.number
 }
 
 Result.defaultProps = {
