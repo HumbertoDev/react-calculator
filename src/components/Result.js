@@ -1,17 +1,15 @@
 import React from "react"
-import PropTypes from "prop-types" 
+import PropTypes from "prop-types"
 
 const Result = ({ value }) => {
     console.log("Renderizacion de result " + value)
-    return (
-        <div className="result-container">
-            {value}
-        </div>
+    return ( 
+        <div className = "result" > { value } </div>
     )
 }
 
-Result.propTypes =  {
-    value : PropTypes.number
+Result.propTypes = {
+    value: PropTypes.number
 }
 
 Result.defaultProps = {

@@ -1,23 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Button = ({bType,pType,value,clickHandler}) => {
-    return (
-        <button className={bType} onClick={()=>{
-            console.log('primera arrow function')
-            clickHandler()
+// Componente Funcional
+const Button = ({type, text, clickHandler}) => (
+    <button className={type} onClick={() => {
+        console.log('funcion en button.js')
+        clickHandler(text)
         }}>
-            <p className={pType}>{value}</p>
-        </button>
-    )
-}
+        <span>{text}</span>
+    </button>
+)
 
 Button.propTypes = {
-    bType: PropTypes.string,
-    pType: PropTypes.string.isRequired,
-    value:PropTypes.string.isRequired,
-    clickHandler:PropTypes.func.isRequired,
-}
+    type: PropTypes.string,
+    text: PropTypes.string.isRequired,
+    clickHandler: PropTypes.func.isRequired
+} 
 
 export default Button
 
