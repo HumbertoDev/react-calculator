@@ -6,6 +6,7 @@ import MathOperations from './components/MathOperators'
 import Result from '../src/components/Result'
 import "./App.css"
 
+
 // component creation with an arrow function
 // Función Flecha o Arrow Function
 const App = () => {
@@ -27,7 +28,10 @@ const App = () => {
                 <button > 9 </button>
                 <button > 0 </button>
             </div>
-            <Functions />
+            <Functions 
+                onClickClear={text => {console.log('Clear:' + text)}}
+                onClickDelete={r => {console.log('Delete:' + r)}}
+            />
             <MathOperations 
                 onClickOperations={operation=>{console.log('Operacion : ' + operation)}}
                 onClickEqual={equal=>{console.log('Equal : ' + equal)}}
